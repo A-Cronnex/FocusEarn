@@ -82,15 +82,26 @@
 
         <ImageView
             android:id="@+id/logo"
-            android:layout_width="441dp"
-            android:layout_height="545dp"
+            android:layout_width="427dp"
+            android:layout_height="439dp"
             android:layout_marginTop="4dp"
             android:scaleType="fitCenter"
             android:src="@drawable/logo_title_transparent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.303"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="325dp"
+            android:layout_height="82dp"
+            android:text="Desconéctate para ganar: enfócate, vive, y gana con FocusEarn."
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="369dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
