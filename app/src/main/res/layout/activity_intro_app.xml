@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".intro.IntroApp">
+    tools:context=".intro.IntroAppFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -62,21 +62,30 @@
                 android:id="@+id/textNoTienesCuenta"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="¿No tienes cuenta?"
                 android:layout_gravity="center_horizontal"
-                android:textSize="20sp"
-                />
+                android:text="¿No tienes cuenta?"
+                android:textSize="20sp" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button2"
+                android:id="@+id/registerButton"
                 android:layout_width="105dp"
-                android:layout_height="65dp"
+                android:layout_height="32dp"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:background="@null"
                 android:text="Regístrate"
                 android:textAllCaps="false"
                 android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:text="¿Olvidaste tu contraseña?"
+                android:textAllCaps="false"
+                />
 
         </LinearLayout>
 
@@ -91,17 +100,6 @@
             app:layout_constraintHorizontal_bias="0.303"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="325dp"
-            android:layout_height="82dp"
-            android:text="Desconéctate para ganar: enfócate, vive, y gana con FocusEarn."
-            android:textAlignment="center"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="369dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

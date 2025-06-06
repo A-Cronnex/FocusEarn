@@ -11,6 +11,7 @@
         android:layout_width="448dp"
         android:layout_height="178dp"
         android:background="#FFFFFF"
+        android:id="@+id/navigation_bar"
         app:itemBackground="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -33,12 +34,15 @@
                 android:layout_width="89dp"
                 android:layout_height="82dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginBottom="4dp"
                 android:background="@null"
                 android:scaleType="fitCenter"
                 android:src="@drawable/leaderboard_bttn"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintEnd_toStartOf="@+id/mainTimerButton"
+                app:layout_constraintHorizontal_bias="0.294"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.947" />
 
             <ImageButton
                 android:id="@+id/mainTimerButton"
@@ -52,19 +56,22 @@
                 app:layout_constraintHorizontal_bias="0.494"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.92" />
+                app:layout_constraintVertical_bias="0.891" />
 
             <ImageButton
                 android:id="@+id/profileButton"
                 android:layout_width="95dp"
                 android:layout_height="87dp"
                 android:layout_marginEnd="36dp"
-                android:layout_marginBottom="4dp"
                 android:background="@null"
                 android:scaleType="fitCenter"
                 android:src="@drawable/profile_bttn"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.702"
+                app:layout_constraintStart_toEndOf="@+id/mainTimerButton"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.945" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>

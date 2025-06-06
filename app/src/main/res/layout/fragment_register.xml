@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/rounded_background" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="287dp"
+            android:layout_height="196dp"
+            android:layout_marginBottom="12dp"
+            app:srcCompat="@drawable/gradient_register"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/username"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="339dp"
+            android:layout_height="101dp"
+            android:layout_marginTop="36dp"
+            app:srcCompat="@drawable/title_transparent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.486" />
+
+        <TextView
+            android:id="@+id/slogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Desonéctate para ganar"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username"
+            android:layout_width="338dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="56dp"
+            android:background="@drawable/background_text_input"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/slogan"
+            app:layout_constraintHorizontal_bias="0.493" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:layout_width="338dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/background_text_input"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputEditText"
+            app:layout_constraintHorizontal_bias="0.493" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText"
+            android:layout_width="338dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="32dp"
+            android:inputType="textPassword"
+            android:background="@drawable/background_text_input"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username"
+            app:layout_constraintHorizontal_bias="0.493" />
+
+        <EditText
+            android:id="@+id/birthDate"
+            android:layout_width="338dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/background_text_input"
+            android:ems="10"
+            android:inputType="date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email"
+            app:layout_constraintHorizontal_bias="0.497" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="93dp"
+            android:layout_height="28dp"
+            android:layout_marginBottom="48dp"
+            android:background="@color/white"
+            android:text="Nombre"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/username"
+            app:layout_constraintEnd_toEndOf="@+id/username"
+            app:layout_constraintBottom_toBottomOf="@+id/username"
+            app:layout_constraintHorizontal_bias="0.151" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="93dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="72dp"
+            android:background="@color/white"
+            android:text="Correo"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/email"
+            app:layout_constraintEnd_toEndOf="@+id/email"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            app:layout_constraintHorizontal_bias="0.126" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingTop="10dp"
+            android:text="Contraseña"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/textInputEditText"
+            app:layout_constraintEnd_toEndOf="@+id/textInputEditText"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            app:layout_constraintBottom_toBottomOf="@+id/textInputEditText"
+            app:layout_constraintHorizontal_bias="0.132"
+            app:layout_constraintVertical_bias="0.565" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="230dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="64dp"
+            android:background="@color/white"
+            android:text="Fecha de Nacimiento"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/birthDate"
+            app:layout_constraintEnd_toEndOf="@+id/birthDate"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            app:layout_constraintHorizontal_bias="0.277" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient"
+            android:padding="15sp"
+            android:text="¡Regístrate!"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/birthDate"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.148" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="82dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="8dp"
+            android:background="#00FFFFFF"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/back_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signIn"
+            app:layout_constraintHorizontal_bias="0.498" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

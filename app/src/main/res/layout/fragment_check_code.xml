@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_code_verficiation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Background Image -->
+        <ImageView
+            android:id="@+id/imageViewBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/background_splash"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <!-- Rounded Container -->
+        <ImageView
+            android:id="@+id/imageViewRounded"
+            android:layout_width="336dp"
+            android:layout_height="520dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/rounded_background"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.22" />
+
+        <!-- Header Text -->
+
+        <!-- Description Text -->
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="304dp"
+            android:layout_height="99dp"
+            android:layout_marginTop="44dp"
+            android:gravity="center"
+            android:text="Verificación Necesaria"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewRounded"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="@+id/imageViewRounded"
+            app:layout_constraintTop_toTopOf="@+id/imageViewRounded" />
+
+        <!-- Input Field -->
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="287dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="44dp"
+            android:gravity="center"
+            android:text="Introduzca el código enviado al correo"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewTitle" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/checkPassword"
+            android:layout_width="299dp"
+            android:layout_height="50dp"
+            android:background="@drawable/background_text_input"
+            android:inputType="textPassword"
+            app:layout_constraintTop_toBottomOf="@id/textViewDescription"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="32dp" />
+
+        <!-- Next Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/next"
+            android:layout_width="240dp"
+            android:layout_height="65dp"
+            android:background="@drawable/gradient"
+            android:padding="15sp"
+            android:text="Siguiente"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintTop_toBottomOf="@id/checkPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="152dp"
+            app:layout_constraintVertical_bias="0.18" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

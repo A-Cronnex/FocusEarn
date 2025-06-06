@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_changepass"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="411dp"
+            android:layout_height="832dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/background_splash"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="336dp"
+            android:layout_height="520dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/rounded_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.219" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="377dp"
+            android:layout_height="204dp"
+            app:srcCompat="@drawable/cloud_main_1"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="295dp"
+            android:layout_height="91dp"
+            android:layout_marginTop="84dp"
+            android:text="Nueva Contraseña"
+            android:textSize="36sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.534" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/checkPassword"
+            android:layout_width="299dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_text_input"
+            android:inputType="textPassword"
+            app:layout_constraintTop_toBottomOf="@+id/imageView14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="286dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/background_text_input"
+            android:inputType="textPassword"
+            app:layout_constraintTop_toBottomOf="@+id/checkPassword"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="277dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="20dp"
+            android:text="La contraseña debe de tener más de 8 caracteres"
+            android:textSize="15sp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/password"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.559" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/next"
+            android:layout_width="240dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="152dp"
+            android:background="@drawable/gradient"
+            android:padding="15sp"
+            android:text="Siguiente"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintTop_toBottomOf="@+id/textView12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.322"
+            app:layout_constraintHorizontal_bias="0.497" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="88dp"
+            android:layout_height="76dp"
+            android:layout_marginTop="32dp"
+            android:background="#00FFFFFF"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back_button"
+            app:layout_constraintTop_toBottomOf="@+id/imageView11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.498" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
