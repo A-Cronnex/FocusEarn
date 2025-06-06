@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -83,7 +81,7 @@
 
         <!-- Next Button -->
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/next"
+            android:id="@+id/nextVerification"
             android:layout_width="240dp"
             android:layout_height="65dp"
             android:background="@drawable/gradient"

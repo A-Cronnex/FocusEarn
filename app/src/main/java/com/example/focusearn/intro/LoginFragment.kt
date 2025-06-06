@@ -6,7 +6,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
+import androidx.appcompat.widget.AppCompatButton
 import com.example.focusearn.R
+import androidx.appcompat.app.AppCompatActivity
+import com.example.focusearn.MainActivity
+import android.content.Intent
+import com.google.android.material.textfield.TextInputEditText
+import android.widget.Toast
+
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -38,6 +46,44 @@ class LoginFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_signin, container, false)
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val loginButton = view.findViewById<AppCompatButton>(R.id.signIn)
+        val returnButton = view.findViewById<ImageButton>(R.id.backButton)
+
+        val emailInput = view.findViewById<TextInputEditText>(R.id.email)
+        val passwordInput = view.findViewById<TextInputEditText>(R.id.password)
+
+        returnButton.setOnClickListener(){
+            replaceFragment(IntroAppFragment())
+        }
+
+        loginButton.setOnClickListener(){
+
+            if (emailInput.text.toString() == "" || passwordInput.text.toString() == ""){
+                Toast.makeText(requireActivity(), "Introduzca los caracteres", Toast.LENGTH_SHORT).show()
+            } else if (passwordInput.text.toString().length < 8){
+                Toast.makeText(requireActivity(),"La contraseña ingresada tiene menos de 8 caracteres", Toast.LENGTH_SHORT).show()
+            } else {
+                val intent = Intent(requireContext(), MainActivity::class.java)
+                startActivity(intent)
+            }
+
+        }
+
+    }
+
+    fun replaceFragment(fragment: Fragment){
+
+        val main_activity = requireActivity()
+        val manager = main_activity.supportFragmentManager
+        val transaction = manager.beginTransaction()
+        transaction.replace(R.id.host, fragment)
+        transaction.commit()
+    }
+
 
     companion object {
         /**

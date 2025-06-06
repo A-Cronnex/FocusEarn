@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/login"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -63,7 +64,7 @@
             app:layout_constraintHorizontal_bias="0.493" />
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/textInputEditText"
+            android:id="@+id/password"
             android:layout_width="338dp"
             android:layout_height="61dp"
             android:layout_marginTop="36dp"
@@ -96,10 +97,10 @@
             android:paddingTop="10dp"
             android:text="Contraseña"
             android:textSize="20sp"
-            app:layout_constraintStart_toStartOf="@+id/textInputEditText"
-            app:layout_constraintEnd_toEndOf="@+id/textInputEditText"
+            app:layout_constraintStart_toStartOf="@+id/password"
+            app:layout_constraintEnd_toEndOf="@+id/password"
             app:layout_constraintTop_toBottomOf="@+id/textView11"
-            app:layout_constraintBottom_toBottomOf="@+id/textInputEditText"
+            app:layout_constraintBottom_toBottomOf="@+id/password"
             app:layout_constraintHorizontal_bias="0.131"
             app:layout_constraintVertical_bias="1.0" />
 
@@ -115,12 +116,12 @@
             android:textAllCaps="false"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputEditText"
+            app:layout_constraintTop_toBottomOf="@+id/password"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintVertical_bias="0.139" />
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/backButton"
             android:layout_width="88dp"
             android:layout_height="76dp"
             android:layout_marginTop="32dp"

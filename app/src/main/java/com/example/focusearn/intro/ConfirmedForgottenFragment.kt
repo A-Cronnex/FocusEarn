@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.widget.AppCompatButton
 import com.example.focusearn.R
 
 // TODO: Rename parameter arguments, choose names that match
@@ -36,6 +37,25 @@ class ConfirmedForgottenFragment: Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_checked, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val backToStart = view.findViewById<AppCompatButton>(R.id.backToStart)
+
+        backToStart.setOnClickListener {
+            replaceFragment(IntroAppFragment())
+        }
+    }
+
+    fun replaceFragment(fragment : Fragment){
+
+        val main_activity = requireActivity()
+        val manager = main_activity.supportFragmentManager
+        val transaction = manager.beginTransaction()
+        transaction.replace(R.id.host, fragment)
+        transaction.commit()
     }
 
     companion object {

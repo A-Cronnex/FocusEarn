@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
+import androidx.appcompat.widget.AppCompatButton
 import com.example.focusearn.R
 
 // TODO: Rename parameter arguments, choose names that match
@@ -36,6 +38,31 @@ class ForgotPasswordFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_forgotpass, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val nextButton = view.findViewById<AppCompatButton>(R.id.nextVerification)
+        val backButton = view.findViewById<ImageButton>(R.id.backButton_newpassword)
+
+        nextButton.setOnClickListener {
+            replaceFragment(ConfirmVerificationFragment())
+        }
+
+        backButton.setOnClickListener {
+            replaceFragment(IntroAppFragment())
+        }
+
+    }
+
+    fun replaceFragment(fragment : Fragment){
+
+        val main_activity = requireActivity()
+        val manager = main_activity.supportFragmentManager
+        val transaction = manager.beginTransaction()
+        transaction.replace(R.id.host, fragment)
+        transaction.commit()
     }
 
     companion object {

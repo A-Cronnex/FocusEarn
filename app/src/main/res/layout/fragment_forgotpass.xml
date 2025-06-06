@@ -94,7 +94,7 @@
             app:layout_constraintHorizontal_bias="0.559" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/next"
+            android:id="@+id/nextVerification"
             android:layout_width="240dp"
             android:layout_height="65dp"
             android:layout_marginBottom="152dp"
@@ -112,7 +112,7 @@
             app:layout_constraintHorizontal_bias="0.497" />
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/backButton_newpassword"
             android:layout_width="88dp"
             android:layout_height="76dp"
             android:layout_marginTop="32dp"

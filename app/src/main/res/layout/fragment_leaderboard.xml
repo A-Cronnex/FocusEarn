@@ -67,7 +67,6 @@
                     android:gravity="center"
                     app:layout_constraintEnd_toStartOf="@+id/imageView13"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraint="parent"
 
                     tools:layout_editor_absoluteY="28dp">
 
